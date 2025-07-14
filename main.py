@@ -9,6 +9,6 @@ app.add_handler(CommandHandler("start", start))
 
 app.add_handler(CommandHandler("add", add))
 
-app.run_polling()
+app.run_polling(drop_pending_updates=True)
 
 print("Programa funcionando correctamente")
